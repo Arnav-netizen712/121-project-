@@ -1,0 +1,111 @@
+<html>
+<head>
+  <title>Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+
+<div>
+  <h3 style="font-family: monospace;color: brown;">CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET</h3>
+  <h3>GOOGLE LENS<img src="Lens.png" style="height: 100px;"></h3>
+  <h3 style="color: tomato;">VS</h3>
+  <h3 class="btn btn-primary" style="margin-bottom: 10px;">MOBILENET</h3>
+</div>
+     <ol>
+    <div class="bob">
+        <li>
+            <b style="margin-right: 1020px;">Test Image - </b><img class="col-lg-2 col-md-2 col-sm-2 col-xs-5" src="20210922_181303.jpg" id="Brush_Image" style="margin-top: 30px;border-radius: 40px;"> 
+        </li><span></span>
+        <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-right: 150px;">Output on Google Lens - Tooth Brush </span><span></span>
+        <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-left: 150px;">Output on Mobile Net - Spatula</span><span></span>
+        <hr>
+        <div class="mini result">
+            <h4>Result - </h4>
+            <p style="height: 180px; width: 180px;"></p>
+            <hr>
+            <h4>Google Lens Is More Accurate</h4>
+        </div>
+    </div>
+
+    <div class="bob">
+      <li>
+          <b style="margin-right: 1020px;">Test Image - </b><img class="col-lg-2 col-md-2 col-sm-2 col-xs-5" src="20210922_181208.jpg" id="Bottle_Image" style="margin-top: 30px;border-radius: 40px;"> 
+      </li><span></span>
+      <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-right: 150px;">Output on Google Lens - Water Bottle</span>
+      <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-left: 150px;">Output on Mobile Net - Hair Dryer</span>
+      <hr>
+      <div class="mini result">
+          <h4>Result - </h4>
+          <p style="height: 180px; width: 180px;"></p>
+          <hr>
+          <h4>Google Lens Is More Accurate</h4>
+      </div>
+  </div>
+
+  <div class="bob">
+    <li>
+        <b style="margin-right: 1020px;">Test Image - </b><img class="col-lg-2 col-md-2 col-sm-2 col-xs-5" src="20210922_181234.jpg" id="Miband_Image" style="margin-top: 30px;border-radius: 40px;"> 
+    </li><span></span>
+    <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-right: 150px;">Output on Google Lens - Mobile Phone</span><span></span>
+    <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-left: 150px;">Output on Mobile Net - Xiaomi Mi Band 4</span><span></span>
+    <hr>
+    <div class="mini result">
+        <h4>Result - </h4>
+        <p style="height: 180px; width: 180px;"></p>
+        <hr>
+        <h4>Mobilenet Model Is More Accurate</h4>
+    </div>
+</div>
+<div class="bob">
+  <li>
+      <b style="margin-right: 1020px;">Test Image - </b><img class="col-lg-2 col-md-2 col-sm-2 col-xs-5" src="20210922_181340.jpg" id="Bulb_Image" style="margin-top: 30px;border-radius: 40px;"> 
+  </li><span></span>
+  <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-right: 150px;">Output on Google Lens - Paper</span><span></span>
+  <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-left: 150px;">Output on Mobile Net - Bulb</span><span></span>
+  <hr>
+  <div class="mini result">
+      <h4>Result - </h4>
+      <p style="height: 180px; width: 180px;"></p>
+      <hr>
+      <h4>Mobilenet Model Is More Accurate</h4>
+  </div>
+</div>
+<div class="bob">
+  <li>
+      <b style="margin-right: 1020px;">Test Image - </b><img class="col-lg-2 col-md-2 col-sm-2 col-xs-5" src="20210922_181401.jpg" id="Keys_Image" style="margin-top: 30px;border-radius: 40px;"> 
+  </li><span></span>
+  <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-right: 150px;">Output on Google Lens - Keys</span><span></span>
+  <span style="background-color: whitesmoke;font-size: 17px;border-radius: 10px;margin-left: 150px;">Output on Mobile Net - Lighter</span><span></span>
+  <hr>
+  <div class="mini result">
+      <h4>Result - </h4>
+      <p style="height: 180px; width: 180px;"></p>
+      <hr>
+      <h4>Google Lens Is More Accurate</h4>
+  </div>
+</div>
+<div id="Accuracy_Label">
+  I have tested 5 images
+ GOOGLE LENS
+have predicted 3 of them more accurately.
+<div> and MOBILENET was less accurate </div> 
+<div>So according to my case study Google Lens is more accurate</div>
+</div>
+<div class="copy_right_footer">
+  Developed by - Mr.Cosmo
+</div>
+</center>
+   
+</body>
+</html>
+
+
